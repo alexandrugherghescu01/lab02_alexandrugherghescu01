@@ -162,7 +162,7 @@ bool IntBST::contains(int value) const {
 // returns the Node containing the predecessor of the given value
 IntBST::Node* IntBST::getPredecessorNode(int value) const {
     // Keep finding "max value" less than value
-    /******if (!root || !contains(value) || count() == 1) return nullptr;
+    if (!root || !contains(value) || count() == 1) return nullptr;
     else {
         Node* node = root;
         Node* predecessor = nullptr;
@@ -183,7 +183,7 @@ IntBST::Node* IntBST::getPredecessorNode(int value) const {
         }
         return predecessor;
     }
-    *******/
+    
     
     return nullptr;
 }
